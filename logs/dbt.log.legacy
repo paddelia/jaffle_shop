@@ -208,3 +208,12 @@
 2022-10-24 23:54:39.154073 (Thread-43): handling status request
 2022-10-24 23:54:39.154422 (Thread-43): 23:54:39  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '1acbf3c7-2686-4482-9306-b44b136fe5b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1a15d41d00>]}
 2022-10-24 23:54:39.154898 (Thread-43): sending response (<Response 1380 bytes [200 OK]>) to 10.0.25.130
+2022-10-24 23:54:50.470891 (Thread-44): 23:54:50  Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+2022-10-24 23:54:50.471193 (Thread-44): 23:54:50  Partial parsing: added file: my_new_project://models/stg_stripe__payments.sql
+2022-10-24 23:54:50.477325 (Thread-44): 23:54:50  1699: static parser successfully parsed stg_stripe__payments.sql
+2022-10-24 23:54:50.830975 (Thread-45): handling status request
+2022-10-24 23:54:50.831345 (Thread-45): 23:54:50  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '1acbf3c7-2686-4482-9306-b44b136fe5b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1a15db5e20>]}
+2022-10-24 23:54:50.831833 (Thread-45): sending response (<Response 1380 bytes [200 OK]>) to 10.0.25.130
+2022-10-25 00:01:52.904964 (Thread-46): handling status request
+2022-10-25 00:01:52.906170 (Thread-46): 00:01:52  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '1acbf3c7-2686-4482-9306-b44b136fe5b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1a15db5cd0>]}
+2022-10-25 00:01:52.906632 (Thread-46): sending response (<Response 1380 bytes [200 OK]>) to 10.0.25.130
