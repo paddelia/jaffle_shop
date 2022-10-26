@@ -21,7 +21,7 @@ renamed as (
             when payment_method in ('stripe', 'paypal', 'credit_card', 'gift_card') then 'credit'
             else 'cash'
         end as payment_type,
-        status,
+        [status],
 
         -- numerics
         amount as amount_cents,
