@@ -4,7 +4,7 @@ with
 
 source as (
 
-    select * from {{ source('stripe','payment') }}
+    select * from {{ source('stripe','payments') }}
 
 ),
 
@@ -13,10 +13,10 @@ renamed as (
     select
         -- ids
         id as payment_id,
-        orderid as order_id,
+        order_id as order_id,
 
         -- strings
-        paymentmethod as payment_method,
+        payment_method as payment_method,
         case
             when payment_method in ('stripe', 'paypal', 'credit_card', 'gift_card') then 'credit'
             else 'cash'
