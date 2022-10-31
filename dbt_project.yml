@@ -33,10 +33,19 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 models:
   jaffle_shop:
-    # Applies to all files under models/intermediate/
-  intermediate:
-    materialized: view
+    staging:
+      +materialized: view
+    intermediate:
+      +materialized: ephemeral
+    marts:
+      +materialized: table
+      finance:
+        +schema: finance
+      marketing:
+        +schema: marketing
 vars:
   # The `start_date` variable will be accessible in all resources
   start_date: to_timestamp(TO_VARCHAR( dateadd(day, -1, Current_timestamp),'YYYY-MM-DD')|| TO_CHAR( 'T23:59:59.999'))
   somevar: 'blabla'      
+
+
