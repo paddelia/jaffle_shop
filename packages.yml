@@ -13,5 +13,3 @@ packages:
 #    revision: main
   - package: calogica/dbt_expectations
     version: 0.7.0
-  - package: Datavault-UK/dbtvault
-    version: 0.9.0    
