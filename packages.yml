@@ -5,3 +5,13 @@ packages:
     version: 0.6.3  
   - package: dbt-labs/codegen
     version: 0.8.1    
+  - package: Snowflake-Labs/dbt_constraints
+    version: [">=0.5.0", "<0.6.0"]
+# <see https://github.com/Snowflake-Labs/dbt_constraints/releases/latest> for the latest version tag.
+# You can also pull the latest changes from Github with the following:
+#  - git: "https://github.com/Snowflake-Labs/dbt_constraints.git"
+#    revision: main
+  - package: calogica/dbt_expectations
+    version: 0.7.0
+  - package: Datavault-UK/dbtvault
+    version: 0.9.0    

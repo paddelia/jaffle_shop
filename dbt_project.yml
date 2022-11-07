@@ -47,6 +47,14 @@ models:
 vars:
   # The `start_date` variable will be accessible in all resources
   start_date: to_timestamp(TO_VARCHAR( dateadd(day, -1, Current_timestamp),'YYYY-MM-DD')|| TO_CHAR( 'T23:59:59.999'))
-  somevar: 'blabla'      
-
-
+  somevar: 'blabla' 
+  'dbt_date:time_zone': 'America/Los_Angeles'    
+  # The dbt_constraints package can be temporarily disabled using this variable
+  dbt_constraints_enabled: true
+  # The package can also add constraints on sources if you have sufficient privileges
+  dbt_constraints_sources_enabled: false
+  # You can also be specific on which constraints are enabled for sources
+  # You must also enable dbt_constraints_sources_enabled above
+  dbt_constraints_sources_pk_enabled: true
+  dbt_constraints_sources_uk_enabled: true
+  dbt_constraints_sources_fk_enabled: true    
